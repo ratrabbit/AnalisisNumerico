@@ -46,3 +46,4 @@ print len(puntosA),len(puntosB)
 """
 Con este ejemplo podemos ver como en el primer caso no llegamos al numero exacto b, que seria el limite 
 de nuestro intervalo y en el segundo si conseguimos algo mas exacto que es justo lo que queremos
+"""

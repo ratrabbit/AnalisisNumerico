@@ -42,7 +42,13 @@ print "a = 100, r = 0.05, n = 365 "+repr(interes(100,.05,365))
 print "a = 100, r = 0.05, n = 10000 "+repr(interes(100,.05,10000))
 print "a = 100, r = 0.05, n = 20000 "+repr(interes(100,.05,20000))
 """
-
+Podemos ver que cumple la formula del interes porque nunca deja de crecer y siempre es mayor
+que la formula anterior, por lo que tiene el comportamiento esperado. En los ultimos dos ejemplos
+con n=10000 y n = 20000 son muy parecidos porque al ser n muy grande el valor de la potencia empieza
+a tender a 1.
+b) Usando las funciones del paquete math. A partir de n = 365 empiezan a ser ligeramente mayores los resultados
+de las funciones precargadas, lo que nos muestra la optimizacion de estas funciones contra nuestro loop para
+obtener las potencias
 """
 def interes1(a,r,n):
     return a*(exp(n*log(1.0+r/n)))
