@@ -5,6 +5,7 @@ Created on Thu Oct 20 19:18:16 2016
 @author: francisco
 """
 import numpy as np
+from random import randint
 
 def naiveGauss(n,a,b,x):
     for k in range(0,n-1):
@@ -21,7 +22,7 @@ def naiveGauss(n,a,b,x):
             suma += a[i][j]*x[j]
         x[i] = suma/a[i][i]
 
-n = 2
+n = (randint(2,20))
 matrizA = np.zeros(shape=(n,n))
 for i in range(0,n):
     for j in range(0,n):
@@ -33,9 +34,9 @@ for i in range(0,n):
 print matrizB
 matrizX = np.zeros(n)
 naiveGauss(n,matrizA,matrizB,matrizX)
-print matrizA
-print matrizX
-print matrizB
+
+print "Solucion: ",matrizX
+
 
 #Resolver usando naive Gauss
 

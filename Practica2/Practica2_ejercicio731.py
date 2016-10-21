@@ -4,15 +4,6 @@ Created on Thu Oct 20 23:40:23 2016
 
 @author: francisco
 """
-"""
-for i in range(1,n):
-        xmult = d[i][i-1]/d[i-1][i-1]
-        d[i][i] -= xmult*d[i-1][i]
-        b[i] -= xmult*b[i-1]
-    x[n-1] = b[n-1]/d[n-1][n-1]
-    for i in range(n-2,-1,-1):
-        x[i] = (b[i]-d[i][i+1]*x[i+1])/d[i][i]
-"""
 import numpy as np
 def tri(a,d,c,b):
     if len(a)==len(c) and len(a)==len(d)-1:
